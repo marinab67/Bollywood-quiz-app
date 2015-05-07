@@ -6,7 +6,6 @@
 	<link rel="stylesheet" href="styles/reset.css">
 	<link rel="stylesheet" href="styles/main.css">
 	<script src="http://code.jquery.com/jquery.min.js"></script>
-	<script type="text/javascript" src="js/questions.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
 	 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Cardo|Cardo:bold|Open+Sans|Open+Sans:bold|Lato|Lato:bold">
 </head>
@@ -16,7 +15,7 @@
 	</div>
 	<div class="intro">
 		<h1>Bollywood dilwala</h1>
-		<h2>Test your deewani knowledge of Bollywood!</h2>
+		<h2>~Test your deewani knowledge of Bollywood!~</h2>
 	</div>
 	<div class="play-area">
 		<div class="start">
@@ -24,29 +23,41 @@
 		</div>
 		<div class="quiz-area">
 			<div class="question">
-				<h2>Question 1 of 5</h2>
+				<h2>Question <p class="questionNum">1</p> of 5</h2>
 				<h3>Which of these films is set in London and Punjab and is said to have revolutionized the modern Indian love story?</h3>
-				<ul class="answers">
-					<li>Jab We Met</li>
-					<li>Dilwale Dulhania Le Jayenge</li>
-					<li>Bodyguard</li>
-					<li>Kuch Na Kaho</li>
-				</ul>
+				<div class="answers">
+					<input type="radio" name="option" class="option" value="0">
+					<span class="answer-0">Jab We Met</span><br>
+					<input type="radio" name="option" class="option" value="1">
+					<span class="answer-1">Dilwale Dulhania Le Jayenge</span><br>
+					<input type="radio" name="option" class="option" value="2">
+					<span class="answer-2">Bodyguard</span><br>
+					<input type="radio" name="option" class="option" value="3">
+					<span class="answer-3">Kuch Na Kaho</span>
+				</div>
 			</div>
 			<div class="submit">
 					<a class="submit-button">SUBMIT</a>
+			</div>
+			<div class="score">
+				<p>Your score:</p>
+				<p class="score-count">0 of 5</p>
 			</div>
 		</div>
 		<div class="answer-screen">
 			<h2>Correct!</h2>
 			<p>Aditya Chopra's <i>Dilwale Dulhania Le Jayenge</i> (1995) canonized, among other things, the romantic runaway train scene.</p>
 			<img src="images/DDLJ.jpg"><br>
-			<a class="continue-button">CONTINUE</a>
+			<a class="continue">CONTINUE</a>
+		</div>
+		<div class="finish-screen">
+			<h2>You're finished!!</h2>
+			<h3></h3>
+			<a class="play-again">PLAY AGAIN</a>
 		</div>
 	</div>
 		
-	<div class="score">
-	</div>
+
 </body>
 </html>
 
