@@ -1,14 +1,14 @@
-html { 
+body { 
 	width: 100%;
 	height: 100%;
 	background-color: gold;
 }
 
-body { 
+.container { 
 	background-color: black;
 	color: white;
 	width: 98.5%;
-	height: 99%;
+	height: 1000px;
 	margin: 0.8em auto;
 	font-family: 'Lato', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 	-webkit-border-radius: 4px;
@@ -90,7 +90,11 @@ a:hover {
 	border-radius: .4rem;
 }
 
-.start-button:hover { 
+.start-button:hover, .submit-button:hover, .continue:hover, .play-again:hover  { 
+	background-color: mediumorchid;
+}
+
+.continue:hover { 
 	background-color: mediumorchid;
 }
 
@@ -122,10 +126,6 @@ a:hover {
 	color: gold;
 }
 
-.question li:active { 
-	background-color: mediumorchid;
-	padding: .5rem;	
-}
 
 .submit { 
 	margin: 0 auto;
@@ -143,10 +143,6 @@ a:hover {
 	padding: .5rem;
 	border: 3px solid white;
 	border-radius: .4rem;
-}
-
-.submit-button:hover, .continue-button:hover, .play-again:hover { 
-	background-color: mediumorchid;
 }
 
 .answer-screen { 
@@ -203,13 +199,19 @@ a:hover {
 
 .finish-screen h2 { 
 	font-size: 2rem;
-	margin-bottom: 2rem;
+	margin-bottom: 4rem;
+	margin-top: 5rem;
 	font-weight: bold;
 }
 
 .finish-screen h3 { 
 	font-size: 2rem;
-	margin-bottom: 2rem;
+	margin-top: 5rem;
+	margin-bottom: 4rem;
 	font-weight: bold;
 	color: mediumorchid;
+}
+
+.film-title { 
+	font-style: italic;
 }
